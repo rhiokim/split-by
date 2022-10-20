@@ -14,7 +14,7 @@ outputs:
   value:
     description: "Array of strings"
 runs:
-  using: node12
+  using: node16
   main: "dist/index.js"
 branding:
   icon: "zap-off"
