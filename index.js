@@ -4,7 +4,11 @@ function run() {
   try {
     const stringValue = core.getInput('string');
     const splitBy = core.getInput('split-by');
-    const value = stringValue.split(splitBy);
+
+    core.debug(`stringValue: ${stringValue}`);
+    core.debug(`splitBy: ${splitBy}`);
+
+    const value = stringValue.split(splitBy || ' ');
     value.forEach((el, index) => {
       core.setOutput(`_${index}`, el);
     });

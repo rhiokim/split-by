@@ -5,11 +5,9 @@ inputs:
   string:
     description: "String to split"
     required: true
-    default: ""
   split-by:
     description: "String to split by"
     required: true
-    default: ""
 outputs:
   value:
     description: "Array of strings"
